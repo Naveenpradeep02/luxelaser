@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxe Asthetics</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css" />
+    <!--font awesome icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- ==========header========== -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="./images/luxe-logo.png" alt="" />
+          <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#service">Services</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+        <div class="nav-contact">
+          <a href="tel:+918885435463" class="phone"
+            ><i class="fa-solid fa-phone-volume"></i>88854 35463
+          </a>
+          <a href="#home" class="book-btn">Book an Appointment</a>
+          <div class="menu-icon">
+            <div class="open"><i class="fa-solid fa-bars"></i></div>
+            <div class="close"><i class="fa-solid fa-xmark"></i></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- mobile -->
+    <div class="mobile-nav">
+      <nav>
+        <a href="#home" onclick="handleClose()">Home</a>
+        <a href="#about" onclick="handleClose()">About</a>
+        <a href="#service" onclick="handleClose()">Services</a>
+        <a href="#contact" onclick="handleClose()">Contact</a>
+      </nav>
+      <div class="mobile-contact">
+        <a href="tel:+918885435463" class="phone">
+          <i class="fa-solid fa-phone-volume"></i>88854 35463
+        </a>
+        <a href="#home" class="book-btn"> Book an Appointment</a>
+        <div class="menu-icon">
+          <div class="open">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ==========header========== -->
+    <!-- ========== hero========== -->
+    <section class="section section1" id="home">
+      <div class="container">
+        <div class="form">
+          <h2>Book Your Consultation Today!</h2>
+          <form
+            method="post"
+            action="https://script.google.com/macros/s/AKfycbw0Ja3pxWDIEBeMvbamsD9MiCdA52JagNm8l_8tovQkatZuVNw6MtQyx_T4AxiNEyUjiQ/exec"
+            class="form-det"
+            id="form"
+          >
+            <span id="nameError" style="color: red"></span>
+            <input
+              type="text"
+              name="Name"
+              id="name"
+              placeholder="Name"
+              required
+            />
+
+            <input type="email" name="Email" id="email" placeholder="Email" />
+            <span id="error" style="color: red"></span>
+            <input
+              type="number"
+              name="Phone"
+              id="phone"
+              placeholder="Phone"
+              maxlength="10"
+              pattern="[0-9]{10}"
+              required
+            />
+            <input
+              type="text"
+              name="Location"
+              id="location"
+              placeholder="Location"
+              required
+            />
+            <select name="Treatment Name" id="treatment">
+              <option value="" disabled selected>Select Treatment</option>
+              <optgroup label="laser Treatments">
+                <!--<option value="prp_gfc">PRP/GFC</option>-->
+                <option value="hair_loss_fall">Underarms</option>
+                <!--<option value="androgenic_alopecia">Androgenic Alopecia</option>-->
+                <!--<option value="alopecia_areata">Alopecia Areata</option>-->
+                <option value="dandruff">Full Arms / Full Legs</option>
+                <option value="premature_greying">
+                  Face, Upper Lip & Chin
+                </option>
+                <option value="hair_growth_boosters">
+                  Bikini & Intimate Areas
+                </option>
+                <option value="scalp_micro_pigmentation">
+                  Chest, Back & Beard Line (Men)
+                </option>
+                <!--<option value="hair_transplant">Hair Transplant</option>-->
+              </optgroup>
+            </select>
+            <button type="submit" class="sub-btn">Submit</button>
+          </form>
+        </div>
+        <div class="hero-img">
+          <img src="./images/hero-img-3.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- ========== hero========== -->
+    <!-- ========== Section 2========== -->
+    <section class="section section2">
+      <div class="container">
+        <div class="section2-img">
+          <div class="text">
+            <h3>
+              Still Waxing or Shaving Every Week? <br />
+              <span
+                >Switch to Laser Hair Removal <br />
+                Now Flat 30% OFF!</span
+              >
+            </h3>
+            <p>
+              Say goodbye to painful waxing and endless shaving. At Luxe
+              Aesthetic, we offer painless, permanent laser hair removal
+              solutions with visible results—now at 30% off for a limited time!
+            </p>
+          </div>
+          <img src="./images/hair.png" alt="" />
+        </div>
+        <!-- <div class="section2-text">
+          <p>
+            At Luxe Aesthetic, we understand that healthy, voluminous hair plays
+            a crucial role in your confidence. Our clinic offers a wide range of
+            advanced hair restoration treatments designed to address hair loss
+            at every stage.
+          </p>
+          <p>
+            Whether you're dealing with male pattern baldness, female hair
+            thinning, or scalp concerns, Luxe Aesthetic provides personalized
+            solutions tailored to your needs. We offer clinically supported hair
+            restoration solutions customized for each individual , Our
+            treatments are designed to support natural hair restoration for both
+            men and women with results that may differ based on individual
+            factors
+          </p>
+        </div> -->
+      </div>
+    </section>
+    <!-- ========== Section 2========== -->
+    <div class="cta2">
+      <div class="container">
+        <div class="text">
+          <div class="det-text">
+            <h2><span>Luxe Aesthetic -</span> Where Confidence Begins</h2>
+            <p>
+              We combine FDA-approved laser technology with expert care to give
+              you smooth, hair-free skin that lasts.
+            </p>
+          </div>
+          <a href="#home"> Book an Appointment Today! </a>
+        </div>
+      </div>
+    </div>
+    <!-- ========== Section 5========== -->
+    <div class="counters">
+      <div class="counter">
+        <h1 style="color: white">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-ticket-percent-icon lucide-ticket-percent"
+          >
+            <path
+              d="M2 9a3 3 0 1 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 1 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"
+            />
+            <path d="M9 9h.01" />
+            <path d="m15 9-6 6" />
+            <path d="M15 15h.01" />
+          </svg>
+        </h1>
+        <h3>Flat 30% Off On All Packages</h3>
+      </div>
+      <div class="counter">
+        <h1><span data-count="500">0</span>+</h1>
+        <h3>
+          Trusted by 500+ <br />
+          Happy Clients in Hyderabad
+        </h3>
+      </div>
+      <!--<div class="counter">-->
+      <!--  <h1><span data-count="90">0</span>%</h1>-->
+      <!--  <h3>Experience Thicker-Looking Hair</h3>-->
+      <!--</div>-->
+      <div class="counter">
+        <!-- <h1><span></span></h1> -->
+        <h2 style="color: white">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-star-icon lucide-star"
+          >
+            <path
+              d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+            />
+          </svg>
+        </h2>
+        <h3>Safe for All Skin Types</h3>
+      </div>
+      <div class="counter">
+        <!-- <h1><span></span></h1> -->
+        <h2 style="color: white">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-shield-check-icon lucide-shield-check"
+          >
+            <path
+              d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+            />
+            <path d="m9 12 2 2 4-4" />
+          </svg>
+        </h2>
+        <h3>Certified Professionals & Skin Experts</h3>
+      </div>
+    </div>
+    <!-- ========== Section 5========== -->
+    <!-- ========== Section 4========== -->
+    <div class="section-t">
+      <h2><span>Why Choose </span>Laser Over Waxing?</h2>
+    </div>
+    <section class="section section4" id="about">
+      <img src="./images/hair.png" alt="" />
+      <div class="det-container">
+        <div class="fet-con">
+          <div class="text">
+            <h3>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-bandage-icon lucide-bandage"
+              >
+                <path d="M10 10.01h.01" />
+                <path d="M10 14.01h.01" />
+                <path d="M14 10.01h.01" />
+                <path d="M14 14.01h.01" />
+                <path d="M18 6v11.5" />
+                <path d="M6 6v12" />
+                <rect x="2" y="6" width="20" height="12" rx="2" />
+              </svg>
+              Up to 90% Permanent Hair Reduction
+            </h3>
+          </div>
+        </div>
+        <div class="fet-con">
+          <div class="text">
+            <h3>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-bandage-icon lucide-bandage"
+              >
+                <path d="M10 10.01h.01" />
+                <path d="M10 14.01h.01" />
+                <path d="M14 10.01h.01" />
+                <path d="M14 14.01h.01" />
+                <path d="M18 6v11.5" />
+                <path d="M6 6v12" />
+                <rect x="2" y="6" width="20" height="12" rx="2" />
+              </svg>
+              No More Ingrown Hair or Razor Cuts
+            </h3>
+          </div>
+        </div>
+        <div class="fet-con">
+          <div class="text">
+            <h3>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-bandage-icon lucide-bandage"
+              >
+                <path d="M10 10.01h.01" />
+                <path d="M10 14.01h.01" />
+                <path d="M14 10.01h.01" />
+                <path d="M14 14.01h.01" />
+                <path d="M18 6v11.5" />
+                <path d="M6 6v12" />
+                <rect x="2" y="6" width="20" height="12" rx="2" />
+              </svg>
+              Quick 20-Minute Sessions
+            </h3>
+          </div>
+        </div>
+        <div class="fet-con">
+          <div class="text">
+            <h3>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-bandage-icon lucide-bandage"
+              >
+                <path d="M10 10.01h.01" />
+                <path d="M10 14.01h.01" />
+                <path d="M14 10.01h.01" />
+                <path d="M14 14.01h.01" />
+                <path d="M18 6v11.5" />
+                <path d="M6 6v12" />
+                <rect x="2" y="6" width="20" height="12" rx="2" />
+              </svg>
+              Gentle on Skin - No Redness or Burns
+            </h3>
+          </div>
+        </div>
+        <div class="fet-con">
+          <div class="text">
+            <h3>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-bandage-icon lucide-bandage"
+              >
+                <path d="M10 10.01h.01" />
+                <path d="M10 14.01h.01" />
+                <path d="M14 10.01h.01" />
+                <path d="M14 14.01h.01" />
+                <path d="M18 6v11.5" />
+                <path d="M6 6v12" />
+                <rect x="2" y="6" width="20" height="12" rx="2" />
+              </svg>
+              Long-Term Savings & Smoother Skin
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== Section 4========== -->
+    <!-- ========== Section 3========== -->
+    <section class="section section3">
+      <div class="container">
+        <div class="section3-text">
+          <h3><span>Who's </span>It For?</h3>
+          <p>Perfect for both women & men who</p>
+          <ul>
+            <li>
+              <img src="./images/send-to-back.png" alt="" />Are tired of
+              frequent hair regrowth
+            </li>
+            <li>
+              <img src="./images/send-to-back.png" alt="" /> Experience pain or
+              rashes after waxing
+            </li>
+            <li>
+              <img src="./images/send-to-back.png" alt="" /> Have coarse,
+              fast-growing body hair
+            </li>
+            <li>
+              <img src="./images/send-to-back.png" alt="" />Want long-term,
+              clean, and confident skin
+            </li>
+          </ul>
+        </div>
+        <div class="section3-img">
+          <img src="./images/section2.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- ========== Section 3========== -->
+    <!-- cta -->
+    <div class="cta2">
+      <div class="container">
+        <div class="text">
+          <div class="det-text">
+            <h2>
+              <span>Limited-Time Offer - Book Now & Save 30%</span>
+            </h2>
+            <p>
+              Take the first step towards smooth, hair-free skin. Get a FREE
+              consultation + Flat 30% OFF on your laser package.
+            </p>
+          </div>
+          <a href="#home"> Book Your Consultation Now </a>
+        </div>
+      </div>
+    </div>
+    <!-- cta -->
+    <!-- ========== Section 6========== -->
+    <section class="section section6" id="service">
+      <div class="container">
+        <h2>
+          Areas
+          <span> We Cover</span>
+        </h2>
+        <p>(Choose Your Package)</p>
+        <div class="treatement-container">
+          <!--<div class="box">-->
+          <!--  <div class="img"><img src="./images/service10.png" alt="" /></div>-->
+          <!--  <div class="text">-->
+          <!--    <h3>Hair Transplant</h3>-->
+          <!--    <p>Restore your natural hairline with precision techniques.</p>-->
+          <!--    <a href="#home" >-->
+          <!--      Book An Appointment</a-->
+          <!--    >-->
+          <!--  </div>-->
+          <!--</div>-->
+          <!--<div class="box">-->
+          <!--  <div class="img"><img src="./images/servise1.png" alt="" /></div>-->
+          <!--  <div class="text">-->
+          <!--    <h3>PRP/GFC Therapy</h3>-->
+          <!--    <p>Improve Hair Appearance with Regenerative Solutions</p>-->
+          <!--    <a href="#home" >-->
+          <!--      Book An Appointment</a-->
+          <!--    >-->
+          <!--  </div>-->
+          <!--</div>-->
+          <div class="box">
+            <div class="img"><img src="./images/service2.png" alt="" /></div>
+            <div class="text">
+              <h3>Underarms</h3>
+
+              <a href="#home"> Book Now & Save 30%</a>
+            </div>
+          </div>
+          <!--<div class="box">-->
+          <!--  <div class="img"><img src="./images/section3.png" alt="" /></div>-->
+          <!--  <div class="text">-->
+          <!--    <h3>Androgenic Alopecia</h3>-->
+          <!--    <p>-->
+          <!--      Specialized treatments for male and female pattern baldness.-->
+          <!--    </p>-->
+          <!--    <a href="#home" >-->
+          <!--      Book Now & Save 30%</a-->
+          <!--    >-->
+          <!--  </div>-->
+          <!--</div>-->
+          <!--<div class="box">-->
+          <!--  <div class="img"><img src="./images/service4.png" alt="" /></div>-->
+          <!--  <div class="text">-->
+          <!--    <h3>Alopecia Areata</h3>-->
+          <!--    <p>Target patchy hair loss with expert solutions.</p>-->
+          <!--    <a href="#home" >-->
+          <!--      Book Now & Save 30%</a-->
+          <!--    >-->
+          <!--  </div>-->
+          <!--</div>-->
+          <div class="box">
+            <div class="img"><img src="./images/section5.png" alt="" /></div>
+            <div class="text">
+              <h3>Full Arms / Full Legs</h3>
+              <a href="#home"> Book Now & Save 30%</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img"><img src="./images/service6.png" alt="" /></div>
+            <div class="text">
+              <h3>Face, Upper Lip & Chin</h3>
+
+              <a href="#home"> Book Now & Save 30%</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img"><img src="./images/service7.png" alt="" /></div>
+            <div class="text">
+              <h3>Bikini & Intimate Areas</h3>
+
+              <a href="#home"> Book Now & Save 30%</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img"><img src="./images/secvice8.png" alt="" /></div>
+            <div class="text">
+              <h3>Chest, Back & Beard Line (Men)</h3>
+
+              <a href="#home"> Book Now & Save 30%</a>
+            </div>
+          </div>
+
+          <div class="box1"></div>
+          <div class="box1"></div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== Section 6========== -->
+    <!-- ========== Section 7========== -->
+    <!-- <section class="section section7">
+      <h2 class="section7-title">Transformations</h2>
+      <div class="container">
+        <div class="slider-container">
+          <div id="slider" class="slider-track">
+            <img src="./images/Beforeafter (1).png" alt="" class="slide" />
+            <img src="./images/Beforeafter (2).png" alt="" class="slide" />
+            <img src="./images/Beforeafter (3).png" alt="" class="slide" />
+            <img src="./images/Beforeafter (4).png" alt="" class="slide" />
+            <img src="./images/Beforeafter (5).png" alt="" class="slide" />
+            <img src="./images/Beforeafter (6).png" alt="" class="slide" />
+            <img src="./images/Beforeafter (7).png" alt="" class="slide" />
+            <img src="./images/Beforeafter (8).png" alt="" class="slide" />
+            <img src="./images/Beforeafter (9).png" alt="" class="slide" />
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- ========== Section 7========== -->
+    <!-- review -->
+    <div class="container">
+      <div class="review">
+        <h2>What <span>Clients Say</span></h2>
+        <div class="review-boxs">
+          <div class="r-box">
+            <div class="profile-box">
+              <div class="img">A</div>
+              <h4>Aaradhya R.</h4>
+              <p>- Hyderabad</p>
+            </div>
+            <h3>
+              " Laser hair removal at Luxe changed my life. No more waxing pain!
+              "
+            </h3>
+          </div>
+          <div class="r-box">
+            <div class="profile-box">
+              <div class="img">S</div>
+              <h4>Shravan K.</h4>
+              <p>- Hitech City</p>
+            </div>
+            <h3>
+              " Visible results in 3 sessions! Totally safe & affordable with
+              the discount. "
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div class="fqa-section">
+      <div class="faq-container">
+        <div class="faq-title">Frequently Asked Questions</div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            Q1. Is laser hair removal safe for my skin tone?
+          </div>
+          <div class="faq-answer">
+            Yes, we use FDA-approved lasers suitable for all Indian skin types.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Q2. How many sessions will I need?</div>
+          <div class="faq-answer">
+            Usually 4–6 sessions are enough, depending on your hair growth and
+            area.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Q3. Is it painful?</div>
+          <div class="faq-answer">
+            It’s virtually painless and way more comfortable than waxing.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Q4. Will the hair come back?</div>
+          <div class="faq-answer">
+            Results are long-lasting. Maintenance sessions may be needed once a
+            year.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Q5. Can men get this done?</div>
+          <div class="faq-answer">
+            Yes! Many men opt for laser hair removal on their chest, back, or
+            beard line.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ========== Section 8========== -->
+    <section class="section section8" id="contact">
+      <div class="container">
+        <div class="form2-container">
+          <div class="form2">
+            <h2>Book Your Consultation Today!</h2>
+            <form
+              method="post"
+              action="https://script.google.com/macros/s/AKfycbw0Ja3pxWDIEBeMvbamsD9MiCdA52JagNm8l_8tovQkatZuVNw6MtQyx_T4AxiNEyUjiQ/exec"
+              class="form-det"
+              id="form2"
+            >
+              <span id="nameError1" style="color: red"></span>
+              <input
+                type="text"
+                name="Name"
+                id="name1"
+                placeholder="Name"
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                id="email1"
+                placeholder="Email"
+              />
+              <input
+                type="number"
+                name="Phone"
+                id="phone1"
+                maxlength="10"
+                pattern="[0-9]{10}"
+                placeholder="Phone"
+                required
+              />
+              <input
+                type="text"
+                name="Location"
+                id="Location1"
+                placeholder="Location"
+                required
+              />
+              <select name="Treatment Name" id="treatment1">
+                <option value="" disabled selected>Select Treatment</option>
+                <optgroup label="laser Treatments">
+                  <!--<option value="prp_gfc">PRP/GFC</option>-->
+                  <option value="hair_loss_fall">Underarms</option>
+                  <!--<option value="androgenic_alopecia">-->
+                  <!--  Androgenic Alopecia-->
+                  <!--</option>-->
+                  <!--<option value="alopecia_areata">Alopecia Areata</option>-->
+                  <option value="dandruff">Full Arms / Full Legs</option>
+                  <option value="premature_greying">
+                    Face, Upper Lip & Chin
+                  </option>
+                  <option value="hair_growth_boosters">
+                    Bikini & Intimate Areas
+                  </option>
+                  <option value="scalp_micro_pigmentation">
+                    Chest, Back & Beard Line (Men)
+                  </option>
+
+                  <!--<option value="hair_transplant">Hair Transplant</option>-->
+                </optgroup>
+              </select>
+              <button type="submit" class="sub-btn sub-btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+        <div class="google">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6888.104574370361!2d78.3444269!3d17.4692045!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb935ef76bca3b%3A0x55a4c34e0192fbd7!2sLuxe%20Aesthetics%20%7C%20Hair%20Laser%20Skin%20Clinic!5e1!3m2!1sen!2sin!4v1742387616655!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <!-- ========== Section 8========== -->
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="social-container">
+          <h3>Follow US</h3>
+          <p>
+            Follow our channels to learn more about Luxe Aesthetics Skin and
+            Hair Care Services
+          </p>
+          <div class="social-icon">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="address">
+          <h3>Make Appointment</h3>
+          <h4>
+            <i class="fa-regular fa-clock"></i>
+            9:30 AM - 8 PM,<br />
+            Tuesday - Sunday
+          </h4>
+          <a href="tel:+918885435463"> Call Us Now </a>
+        </div>
+      </div>
+      <hr style="margin-top: 40px" />
+
+      <p
+        style="
+          align-items: center;
+          margin-top: 30px;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 5px;
+        "
+      >
+        <a href="./privacypolicy.html">PRIVACY POLICY || </a>
+        <a href="./terms.html">Terms & Conditions</a>
+      </p>
+    </footer>
+    <!-- footer -->
+    <!-- js -->
+    <script src="./script.js"></script>
+  </body>
+</html>
